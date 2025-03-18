@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula02 - Js e JQuery</title>
+</head>
+<body>
+    <script>
+        document.write("Bom dia!")
+        console.log("Este é um log, escrito no console")
+
+        pessoa = {
+            nome : "Maria" , 
+            idade : 25 ,
+            altura : 1.75 ,
+            formacoes : ["Técnico", "Graduação", "Mestrado"] ,
+            casado : true , 
+            conjuge : {nome : "José", idade : 26} , 
+            filhos : [
+                {nome : "Júlia", idade : 5} ,
+                {nome : "Enzo", idade : 3}
+            ] , 
+            endereco : null ,
+            getInfos : function() {
+                return this.nome + " - idade: " + this.idade 
+            }
+        }
+        txt = "<hr>"
+        txt += pessoa.getInfos() + "<br>Altura: " + pessoa.altura
+        txt += "<br>Formações: "
+        pessoa.formacoes.forEach( form => {
+            txt += form + " - "
+        })
+        if(pessoa.casado)
+            txt += "<br>Cônjuge: " + pessoa.conjuge.nome
+        txt += "<br>Filhos: "
+        pessoa.filhos.forEach( filho =>{
+            txt += "<br>" + filho.nome + " Idade: " + filho.idade
+        })
+
+        document.write( txt )
+
+    </script>
+
+
+
+</body>
+</html>
