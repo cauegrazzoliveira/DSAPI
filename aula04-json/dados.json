@@ -1,0 +1,16 @@
+{
+    "modelo" : "Doblo",
+    "ano" : 2006,
+    "motor" : 1.3,
+    "cambioAutomatico" : false,
+    "placa" : null,
+    "combustivel" : ["Gasolina" , "GNV"],
+    "proprietario" : {
+        "nome" : "Adalto",
+        "idade" : 39
+    },
+    "opcionais" : [
+        {"nome" : "Ar" , "marca" : "GelaMais"},
+        {"nome" : "Rastreador" , "marca" : "RastreiaMais"}
+    ]
+}

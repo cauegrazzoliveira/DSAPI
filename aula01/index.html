@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01</title>
+</head>
+<body>
+<!--    <div id="minhaDiv">Olá Pessoal</div>
+   <button onclick="darBomDia()">Dar Bom Dia</button>
+
+    <script> 
+        var minhaDiv = document.getElementById("minhaDiv"); 
+        function darBomDia(){
+            minhaDiv.innerHTML += "<br><i>Bom Dia!</i>";
+            minhaDiv.style.width = "200px";
+            minhaDiv.style.background = "red";
+            minhaDiv.style.color = "#fff"; 
+            // rbg(255, 255, 255)
+
+
+        }
+    
+    </script>
+-->
+    <input type="text" id="myText">
+    <button onclick="add()"> + </button>
+    <ol id="lista"></ol>
+    <script>
+        
+        var txtvalor = document.getElementById("myText");
+        var lista = document.getElementById("lista");
+        function add(){
+            valor = txtvalor.value;
+            if( valor != ""){
+                lista.innerHTML += "<li>" + valor + "</li>";
+            }
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
